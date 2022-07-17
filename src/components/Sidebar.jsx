@@ -5,6 +5,7 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  Switch,
 } from "@mui/material";
 
 import {
@@ -20,7 +21,7 @@ import {
 
 import React from "react";
 
-const Sidebar = () => {
+const Sidebar = ({ mode, setMode }) => {
   return (
     <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
       <Box position="fixed">
@@ -91,7 +92,7 @@ const Sidebar = () => {
               <ListItemText primary="Profile" />
             </ListItemButton>
           </ListItem>
-          {/* <ListItem disablePadding>
+          <ListItem disablePadding>
             <ListItemButton component="a" href="#simple-list">
               <ListItemIcon>
                 <ModeNight />
@@ -100,7 +101,7 @@ const Sidebar = () => {
                 onChange={(e) => setMode(mode === "light" ? "dark" : "light")}
               />
             </ListItemButton>
-          </ListItem> */}
+          </ListItem>
         </List>
       </Box>
     </Box>
