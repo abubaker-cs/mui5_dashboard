@@ -14,10 +14,11 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import ShareIcon from "@mui/icons-material/Share";
 import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
 import Favorite from "@mui/icons-material/Favorite";
+import Add from "./Add";
 
 const Post = () => {
   return (
-    <Card>
+    <Card sx={{ marginBottom: "48px" }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
@@ -29,8 +30,8 @@ const Post = () => {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        title="John Doe"
+        subheader="September 14, 2022"
       />
       <CardMedia
         component="img"
@@ -56,6 +57,7 @@ const Post = () => {
           <ShareIcon />
         </IconButton>
       </CardActions>
+      <Add />
     </Card>
   );
 };
