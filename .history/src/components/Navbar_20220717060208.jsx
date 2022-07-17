@@ -1,14 +1,5 @@
-import { Dashboard, Mail, Notifications } from "@mui/icons-material";
-import {
-  AppBar,
-  Toolbar,
-  styled,
-  Typography,
-  Box,
-  InputBase,
-  Badge,
-  Avatar,
-} from "@mui/material";
+import { Dashboard } from "@mui/icons-material";
+import { AppBar, Toolbar, styled, Typography, Box } from "@mui/material";
 import React from "react";
 
 // Base styles for custom Toolbar wrapper | flex justify = space-between
@@ -21,14 +12,11 @@ const StyledToolbar = styled(Toolbar)({
 const Search = styled("div")(({ theme }) => ({
   backgroundColor: "white",
   padding: "0 10px",
-  borderRadius: theme.shape.borderRadius,
-  width: "40%",
+  borderRadius: "50%",
 }));
 
 const Icons = styled(Box)(({ theme }) => ({
-  display: "flex",
-  gap: "20px",
-  alignItems: "center",
+  backgroundColor: "white",
 }));
 
 const Navbar = () => {
@@ -54,21 +42,8 @@ const Navbar = () => {
             },
           }}
         />
-        <Search>
-          <InputBase placeholder="Search" />
-        </Search>
-        <Icons>
-          <Badge badgeContent={8} color="error">
-            <Mail />
-          </Badge>
-          <Badge badgeContent={8} color="error">
-            <Notifications />
-          </Badge>
-          <Avatar
-            sx={{ width: 30, height: 30 }}
-            src="https://i.pravatar.cc/300"
-          />
-        </Icons>
+        <Search>Search</Search>
+        <Icons>Icons</Icons>
       </StyledToolbar>
     </AppBar>
   );

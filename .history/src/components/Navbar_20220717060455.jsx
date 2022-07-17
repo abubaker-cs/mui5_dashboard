@@ -1,4 +1,4 @@
-import { Dashboard, Mail, Notifications } from "@mui/icons-material";
+import { Dashboard } from "@mui/icons-material";
 import {
   AppBar,
   Toolbar,
@@ -6,8 +6,6 @@ import {
   Typography,
   Box,
   InputBase,
-  Badge,
-  Avatar,
 } from "@mui/material";
 import React from "react";
 
@@ -26,9 +24,7 @@ const Search = styled("div")(({ theme }) => ({
 }));
 
 const Icons = styled(Box)(({ theme }) => ({
-  display: "flex",
-  gap: "20px",
-  alignItems: "center",
+  backgroundColor: "white",
 }));
 
 const Navbar = () => {
@@ -57,18 +53,7 @@ const Navbar = () => {
         <Search>
           <InputBase placeholder="Search" />
         </Search>
-        <Icons>
-          <Badge badgeContent={8} color="error">
-            <Mail />
-          </Badge>
-          <Badge badgeContent={8} color="error">
-            <Notifications />
-          </Badge>
-          <Avatar
-            sx={{ width: 30, height: 30 }}
-            src="https://i.pravatar.cc/300"
-          />
-        </Icons>
+        <Icons>Icons</Icons>
       </StyledToolbar>
     </AppBar>
   );

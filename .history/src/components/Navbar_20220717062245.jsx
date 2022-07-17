@@ -25,11 +25,7 @@ const Search = styled("div")(({ theme }) => ({
   width: "40%",
 }));
 
-const Icons = styled(Box)(({ theme }) => ({
-  display: "flex",
-  gap: "20px",
-  alignItems: "center",
-}));
+const Icons = styled(Box)(({ theme }) => ({}));
 
 const Navbar = () => {
   return (
@@ -64,10 +60,7 @@ const Navbar = () => {
           <Badge badgeContent={8} color="error">
             <Notifications />
           </Badge>
-          <Avatar
-            sx={{ width: 30, height: 30 }}
-            src="https://i.pravatar.cc/300"
-          />
+          <Avatar sx={{ width: 300, height: 30 }} src="" />
         </Icons>
       </StyledToolbar>
     </AppBar>

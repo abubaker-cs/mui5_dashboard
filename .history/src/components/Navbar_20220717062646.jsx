@@ -66,7 +66,7 @@ const Navbar = () => {
           </Badge>
           <Avatar
             sx={{ width: 30, height: 30 }}
-            src="https://i.pravatar.cc/300"
+            src="https://i.pravatar.cc/30"
           />
         </Icons>
       </StyledToolbar>
