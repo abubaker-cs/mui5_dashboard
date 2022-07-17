@@ -11,7 +11,7 @@ import {
   Menu,
   MenuItem,
 } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 
 // Base styles for custom Toolbar wrapper | flex justify = space-between
 const StyledToolbar = styled(Toolbar)({
@@ -48,8 +48,6 @@ const UserBox = styled(Box)(({ theme }) => ({
 }));
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
-
   return (
     <AppBar position="sticky">
       <StyledToolbar>
@@ -85,10 +83,9 @@ const Navbar = () => {
           <Avatar
             sx={{ width: 30, height: 30 }}
             src="https://i.pravatar.cc/300"
-            onClick={(e) => setOpen(true)}
           />
         </Icons>
-        <UserBox onClick={(e) => setOpen(true)}>
+        <UserBox>
           <Avatar
             sx={{ width: 30, height: 30 }}
             src="https://i.pravatar.cc/300"
@@ -97,13 +94,12 @@ const Navbar = () => {
         </UserBox>
       </StyledToolbar>
       <Menu
-        id="demo-positioned-menu"
-        aria-labelledby="demo-positioned-button"
-        open={open}
-        onClose={(e) => setOpen(false)}
+        id=""
+        aria-labelledby=""
+        open={true}
         anchorOrigin={{
           vertical: "top",
-          horizontal: "right",
+          horizontal: "left",
         }}
         transformOrigin={{
           vertical: "top",

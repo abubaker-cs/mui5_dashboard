@@ -100,7 +100,7 @@ const Navbar = () => {
         id="demo-positioned-menu"
         aria-labelledby="demo-positioned-button"
         open={open}
-        onClose={(e) => setOpen(false)}
+        onClose={(e) => setOpen(true)}
         anchorOrigin={{
           vertical: "top",
           horizontal: "right",
