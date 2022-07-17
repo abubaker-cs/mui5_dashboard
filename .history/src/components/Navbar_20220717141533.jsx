@@ -96,7 +96,7 @@ const Navbar = () => {
       <Menu
         id=""
         aria-labelledby=""
-        open={open}
+        open={}
         anchorOrigin={{
           vertical: "top",
           horizontal: "left",

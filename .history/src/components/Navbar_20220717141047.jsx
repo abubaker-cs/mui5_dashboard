@@ -8,8 +8,6 @@ import {
   InputBase,
   Badge,
   Avatar,
-  Menu,
-  MenuItem,
 } from "@mui/material";
 import React from "react";
 
@@ -93,23 +91,6 @@ const Navbar = () => {
           <Typography variant="span">John</Typography>
         </UserBox>
       </StyledToolbar>
-      <Menu
-        id=""
-        aria-labelledby=""
-        open={open}
-        anchorOrigin={{
-          vertical: "top",
-          horizontal: "left",
-        }}
-        transformOrigin={{
-          vertical: "top",
-          horizontal: "left",
-        }}
-      >
-        <MenuItem>Profile</MenuItem>
-        <MenuItem>My Account</MenuItem>
-        <MenuItem>Logout</MenuItem>
-      </Menu>
     </AppBar>
   );
 };

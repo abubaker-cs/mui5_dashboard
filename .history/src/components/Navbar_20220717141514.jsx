@@ -94,10 +94,9 @@ const Navbar = () => {
         </UserBox>
       </StyledToolbar>
       <Menu
-        id=""
-        aria-labelledby=""
-        open={open}
-        anchorOrigin={{
+        id="demo-positioned-menu"
+        aria-labelledby="demo-positioned-button"
+        open={}
           vertical: "top",
           horizontal: "left",
         }}

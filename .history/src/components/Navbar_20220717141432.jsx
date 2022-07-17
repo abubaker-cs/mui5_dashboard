@@ -94,8 +94,8 @@ const Navbar = () => {
         </UserBox>
       </StyledToolbar>
       <Menu
-        id=""
-        aria-labelledby=""
+        id="demo-positioned-menu"
+        aria-labelledby="demo-positioned-button"
         open={open}
         anchorOrigin={{
           vertical: "top",
@@ -106,9 +106,9 @@ const Navbar = () => {
           horizontal: "left",
         }}
       >
-        <MenuItem>Profile</MenuItem>
-        <MenuItem>My Account</MenuItem>
-        <MenuItem>Logout</MenuItem>
+        <MenuItem onClick={handleClose}>Profile</MenuItem>
+        <MenuItem onClick={handleClose}>My account</MenuItem>
+        <MenuItem onClick={handleClose}>Logout</MenuItem>
       </Menu>
     </AppBar>
   );
