@@ -11,6 +11,7 @@ import {
 import {
   AccountBox,
   Article,
+  Assignment,
   Group,
   Home,
   ModeNight,
@@ -29,7 +30,7 @@ const Sidebar = ({ mode, setMode }) => {
           {/* Home */}
           <ListItem disablePadding>
             <ListItemButton component="a" href="#home">
-              <ListItemIcon>
+              <ListItemIcon sx={{ minWidth: "40px" }}>
                 <Home />
               </ListItemIcon>
               <ListItemText primary="Homepage" />
@@ -38,7 +39,7 @@ const Sidebar = ({ mode, setMode }) => {
           {/* Pages */}
           <ListItem disablePadding>
             <ListItemButton component="a" href="#simple-list">
-              <ListItemIcon>
+              <ListItemIcon sx={{ minWidth: "40px" }}>
                 <Article />
               </ListItemIcon>
               <ListItemText primary="Pages" />
@@ -47,7 +48,7 @@ const Sidebar = ({ mode, setMode }) => {
           {/* Groups */}
           <ListItem disablePadding>
             <ListItemButton component="a" href="#simple-list">
-              <ListItemIcon>
+              <ListItemIcon sx={{ minWidth: "40px" }}>
                 <Group />
               </ListItemIcon>
               <ListItemText primary="Groups" />
@@ -56,7 +57,7 @@ const Sidebar = ({ mode, setMode }) => {
           {/* Marketplace */}
           <ListItem disablePadding>
             <ListItemButton component="a" href="#simple-list">
-              <ListItemIcon>
+              <ListItemIcon sx={{ minWidth: "40px" }}>
                 <Storefront />
               </ListItemIcon>
               <ListItemText primary="Marketplace" />
@@ -66,7 +67,7 @@ const Sidebar = ({ mode, setMode }) => {
           {/* Friends */}
           <ListItem disablePadding>
             <ListItemButton component="a" href="#simple-list">
-              <ListItemIcon>
+              <ListItemIcon sx={{ minWidth: "40px" }}>
                 <Person />
               </ListItemIcon>
               <ListItemText primary="Friends" />
@@ -76,7 +77,7 @@ const Sidebar = ({ mode, setMode }) => {
           {/* Settings */}
           <ListItem disablePadding>
             <ListItemButton component="a" href="#simple-list">
-              <ListItemIcon>
+              <ListItemIcon sx={{ minWidth: "40px" }}>
                 <Settings />
               </ListItemIcon>
               <ListItemText primary="Settings" />
@@ -86,7 +87,7 @@ const Sidebar = ({ mode, setMode }) => {
           {/* Profile */}
           <ListItem disablePadding>
             <ListItemButton component="a" href="#simple-list">
-              <ListItemIcon>
+              <ListItemIcon sx={{ minWidth: "40px" }}>
                 <AccountBox />
               </ListItemIcon>
               <ListItemText primary="Profile" />
@@ -94,7 +95,7 @@ const Sidebar = ({ mode, setMode }) => {
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton component="a" href="#simple-list">
-              <ListItemIcon>
+              <ListItemIcon sx={{ minWidth: "28px" }}>
                 <ModeNight />
               </ListItemIcon>
               <Switch
