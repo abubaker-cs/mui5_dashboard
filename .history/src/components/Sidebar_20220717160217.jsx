@@ -6,8 +6,7 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
-
-import InboxIcon from "@mui/icons-material/Inbox";
+import { DashboardIcon } from "@material-ui/icons";
 
 import React from "react";
 

@@ -4,11 +4,7 @@ import {
   ListItem,
   ListItemButton,
   ListItemIcon,
-  ListItemText,
 } from "@mui/material";
-
-import InboxIcon from "@mui/icons-material/Inbox";
-
 import React from "react";
 
 const Sidebar = () => {

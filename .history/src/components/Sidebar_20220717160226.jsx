@@ -7,7 +7,7 @@ import {
   ListItemText,
 } from "@mui/material";
 
-import InboxIcon from "@mui/icons-material/Inbox";
+import { InboxIcon } from "@material-ui/icons";
 
 import React from "react";
 

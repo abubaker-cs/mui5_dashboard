@@ -6,9 +6,6 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
-
-import InboxIcon from "@mui/icons-material/Inbox";
-
 import React from "react";
 
 const Sidebar = () => {
@@ -23,7 +20,7 @@ const Sidebar = () => {
         <ListItem disablePadding>
           <ListItemButton>
             <ListItemIcon>
-              <InboxIcon />
+              <Inbox />
             </ListItemIcon>
             <ListItemText primary="Inbox" />
           </ListItemButton>
