@@ -70,18 +70,12 @@ const Navbar = () => {
           <Badge badgeContent={8} color="error">
             <Notifications />
           </Badge>
-          <Avatar
-            sx={{ width: 30, height: 30 }}
-            src="https://i.pravatar.cc/300"
-          />
+          
         </Icons>
-        <UserBox>
-          <Avatar
+        <UserBox><Avatar
             sx={{ width: 30, height: 30 }}
             src="https://i.pravatar.cc/300"
-          />
-          <Typography variant="span">John</Typography>
-        </UserBox>
+          />/UserBox>
       </StyledToolbar>
     </AppBar>
   );

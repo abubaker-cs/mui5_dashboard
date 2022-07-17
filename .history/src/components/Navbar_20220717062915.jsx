@@ -76,12 +76,6 @@ const Navbar = () => {
           />
         </Icons>
         <UserBox>
-          <Avatar
-            sx={{ width: 30, height: 30 }}
-            src="https://i.pravatar.cc/300"
-          />
-          <Typography variant="span">John</Typography>
-        </UserBox>
       </StyledToolbar>
     </AppBar>
   );

@@ -31,12 +31,6 @@ const Icons = styled(Box)(({ theme }) => ({
   alignItems: "center",
 }));
 
-const UserBox = styled(Box)(({ theme }) => ({
-  display: "flex",
-  gap: "10px",
-  alignItems: "center",
-}));
-
 const Navbar = () => {
   return (
     <AppBar position="sticky">
@@ -75,13 +69,6 @@ const Navbar = () => {
             src="https://i.pravatar.cc/300"
           />
         </Icons>
-        <UserBox>
-          <Avatar
-            sx={{ width: 30, height: 30 }}
-            src="https://i.pravatar.cc/300"
-          />
-          <Typography variant="span">John</Typography>
-        </UserBox>
       </StyledToolbar>
     </AppBar>
   );
